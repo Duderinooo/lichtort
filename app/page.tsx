@@ -1,9 +1,10 @@
-import Image from "next/image";
+import Image from 'next/image';
+import { LotusLine } from './components/lotus_line/lotus_Line';
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col justify-between p-24">
-      Here goes main content
+      <LotusLine />
     </main>
   );
 }
