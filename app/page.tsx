@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { LotusLine } from './components/lotus_line/lotus_Line';
+import { LotusLine } from './components/lotus_line/lotus_line';
 
 export default function Home() {
   return (
