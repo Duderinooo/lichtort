@@ -14,8 +14,8 @@ export const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="sticky top-[-90vh] h-screen w-screen">
-      <Hero />+
+    <div className="sticky top-[-90vh] z-10 h-screen w-screen">
+      <Hero />
       <div className="absolute bottom-0 w-screen p-4 text-center text-white">
         <div className="flex justify-center gap-4">
           <Link

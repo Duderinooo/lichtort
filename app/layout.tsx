@@ -1,25 +1,30 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
 import { Navbar } from './components/navbar/navbar';
-import Image from 'next/image';
-
-const inter = Inter({ subsets: ['latin'] });
+import { Footer } from './components/footer/footer';
+import Head from 'next/head';
+import { inter } from './fonts';
+import { PropsWithChildren } from 'react';
 
 export const metadata: Metadata = {
   title: 'Lichtort',
   description: 'Lichtort Meditation Yoga Heilung',
 };
 
-export default function RootLayout({
-  children,
-}: {
+type RootLayoutProps = {
   children: React.ReactNode;
-}) {
+};
+
+export default function RootLayout(props: PropsWithChildren<RootLayoutProps>) {
+  const { children } = props;
   return (
     <html lang="en">
-      <Navbar />
-      <div className={`${inter.className} antialiased`}>{children}</div>
+      <Head>{children}</Head>
+      <body>
+        <Navbar />
+        <div className={`${inter.className} antialiased`}>{children}</div>
+        <Footer />
+      </body>
     </html>
   );
 }
