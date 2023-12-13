@@ -1,10 +1,12 @@
 import Image from 'next/image';
+import { LotusLine } from './components/lotus_line/lotus_line';
 import { FiftyFiftySection } from './components/fifty-fifty-secion/fifty-fifty-section';
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col justify-between p-24 pl-56 pr-56">
       <FiftyFiftySection image="./images/tina.jpg" text={dummyText} />
+       <LotusLine />
     </main>
   );
 }
