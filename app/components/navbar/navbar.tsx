@@ -2,7 +2,8 @@
 import {
   CalendarIcon,
   HomeIcon,
-  DocumentDuplicateIcon,
+  BookOpenIcon,
+  PhotoIcon,
 } from '@heroicons/react/24/outline';
 import { Hero } from '../hero/hero';
 import Link from 'next/link';
@@ -31,14 +32,6 @@ export const Navbar = () => {
             <HomeIcon className="w-6" />
             <p className="m-auto">Startseite</p>
           </Link>
-          <Image
-            className="ml-[-18px]"
-            src={'/images/logo_clear.svg'}
-            alt={'Lichtort company logo: Yoga, Meditation, Heilung'}
-            height={64}
-            width={64}
-            unoptimized
-          />
           <Link
             key={'Termine'}
             href={'/termine'}
@@ -51,6 +44,40 @@ export const Navbar = () => {
           >
             <CalendarIcon className="w-6" />
             <p className="m-auto">Termine</p>
+          </Link>
+          <Image
+            className="ml-[-18px]"
+            src={'/images/logo_clear.svg'}
+            alt={'LichtOrt company logo: Yoga, Meditation, Healing'}
+            height={64}
+            width={64}
+            unoptimized
+          />
+          <Link
+            key={'Angebot'}
+            href={'/angebot'}
+            className={clsx(
+              'flex gap-2 p-3 text-2xl font-medium hover:text-primary-400 md:flex-none md:justify-start md:p-2 md:px-3',
+              {
+                'text-primary-400': pathname === '/angebot',
+              },
+            )}
+          >
+            <BookOpenIcon className="w-6" />
+            <p className="m-auto">Angebot</p>
+          </Link>
+          <Link
+            key={'Mediathek'}
+            href={'/media'}
+            className={clsx(
+              'flex gap-2 p-3 text-2xl font-medium hover:text-primary-400 md:flex-none md:justify-start md:p-2 md:px-3',
+              {
+                'text-primary-400': pathname === '/media',
+              },
+            )}
+          >
+            <PhotoIcon className="w-6" />
+            <p className="m-auto">Mediathek</p>
           </Link>
         </div>
       </div>

@@ -17,7 +17,12 @@ export const Footer = () => {
           <p>Email</p>
         </div>
       </div>
-      <Image src={'/images/logo_clear.svg'} alt={'Lichtort company logo: Yoga, Meditation, Heilung'} height={128} width={128} />
+      <Image
+        src={'/images/logo_clear.svg'}
+        alt={'LichtOrt company logo: Yoga, Meditation, Healing'}
+        height={128}
+        width={128}
+      />
     </div>
   );
 };

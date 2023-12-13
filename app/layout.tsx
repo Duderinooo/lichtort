@@ -7,8 +7,8 @@ import { inter } from './fonts';
 import { PropsWithChildren } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Lichtort',
-  description: 'Lichtort Meditation Yoga Heilung',
+  title: 'LichtOrt',
+  description: 'LichtOrt Meditation Yoga Heilung',
 };
 
 type RootLayoutProps = {
