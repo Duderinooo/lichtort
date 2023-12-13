@@ -36,7 +36,7 @@ export const FadingText = () => {
         setIndex((prevIndex) => (prevIndex + 1) % data.length);
         setIsFadingOut(false);
       }, 1000); // Adjust the duration to match your transition duration
-    }, 10000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, [index, data.length]);

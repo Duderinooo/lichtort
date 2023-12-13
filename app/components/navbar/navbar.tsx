@@ -33,8 +33,8 @@ export const Navbar = () => {
           </Link>
           <Image
             className="ml-[-18px]"
-            src={'./images/logo_clear.svg'}
-            alt={''}
+            src={'/images/logo_clear.svg'}
+            alt={'Lichtort company logo: Yoga, Meditation, Heilung'}
             height={64}
             width={64}
             unoptimized
