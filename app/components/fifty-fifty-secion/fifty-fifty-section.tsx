@@ -12,14 +12,11 @@ export const FiftyFiftySection = (props: FiftyFiftySectionProps) => {
   const flexDirectionClass = left ? 'flex-row-reverse' : 'flex-row';
 
   return (
-    <div
-      className={`flex ${flexDirectionClass} gap-4 p-4`}
-      style={{ minHeight: '500px' }}
-    >
-      <div className="relative w-1/2 overflow-hidden rounded-md">
+    <div className={`block md:flex ${flexDirectionClass} relative gap-4 `}>
+      <div className="relative min-h-[400px] w-full overflow-hidden rounded-md lg:w-1/2">
         <Image src={image} alt={''} fill objectFit="cover" unoptimized />
       </div>
-      <div className="w-1/2 p-4">{text}</div>
+      <div className="w-full pt-4 md:p-0 lg:w-1/2">{text}</div>
     </div>
   );
 };

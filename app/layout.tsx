@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { Navbar } from './components/navbar/navbar';
 import Image from 'next/image';
+import { Footer } from './components/footer/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <Navbar />
       <div className={`${inter.className} antialiased`}>{children}</div>
+      <Footer />
     </html>
   );
 }
