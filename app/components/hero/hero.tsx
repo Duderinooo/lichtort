@@ -8,7 +8,7 @@ export const Hero = () => {
         <FadingText />
       </div>
       <Image
-        src={'./images/hero.jpg'}
+        src={'/images/hero.jpg'}
         alt={
           'An orange and red sunset with a silhouette of a tree in the foreground and a vibrant yellow sun in the middle'
         }
