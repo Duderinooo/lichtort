@@ -15,8 +15,9 @@ export const PresentationText = () => {
       <p className="lg:text-lg">
         2013 entschied ich mich für die vierjährige Yogalehrausbildung am
         Himalaya Institut Hamburg, die ich 2017 erfolgreich mit dem offiziell
-        anerkannten Abschluss "Yogalehrerin BDY/EYU" des "Bund der Yogalehrenden
-        Deutschland" und der "European Yoga Union" abschloss.
+        anerkannten Abschluss &ldquo;Yogalehrerin BDY/EYU&rdquo; des &ldquo;Bund
+        der Yogalehrenden Deutschland&rdquo; und der &ldquo;European Yoga
+        Union&rdquo; abschloss.
       </p>
       <p className="lg:text-lg">
         Seit 2014 teile ich meine Liebe und Erfahrung im Yoga-Unterricht und
