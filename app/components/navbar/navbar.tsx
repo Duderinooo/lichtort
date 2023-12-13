@@ -10,48 +10,48 @@ import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 import Image from 'next/image';
 
-const links = [
-  { name: 'Startseite', href: '/', icon: HomeIcon },
-  {
-    name: 'Termine',
-    href: '/termine',
-    icon: CalendarIcon,
-  },
-];
-
 export const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="relative h-screen w-screen">
-      <Hero />
-      <div className="to-primary-400 absolute bottom-0  w-screen bg-gradient-to-r from-white p-4 text-center">
+    <div className="sticky top-[-90vh] h-screen w-screen">
+      <Hero />+
+      <div className="absolute bottom-0 w-screen p-4 text-center text-white">
         <div className="flex justify-center gap-4">
+          <Link
+            key={'Startseite'}
+            href={'/'}
+            className={clsx(
+              'flex gap-2 p-3 text-2xl font-medium hover:text-primary-400 md:flex-none md:justify-start md:p-2 md:px-3',
+              {
+                'text-primary-400': pathname === '/',
+              },
+            )}
+          >
+            <HomeIcon className="w-6" />
+            <p className="m-auto">Startseite</p>
+          </Link>
           <Image
+            className="ml-[-18px]"
             src={'./images/logo_clear.svg'}
             alt={''}
             height={64}
             width={64}
             unoptimized
           />
-          {links.map((link) => {
-            const LinkIcon = link.icon;
-            return (
-              <Link
-                key={link.name}
-                href={link.href}
-                className={clsx(
-                  'flex gap-2 rounded-md bg-gray-50 p-3 text-2xl font-medium hover:bg-sky-100 hover:text-red-400 md:flex-none md:justify-start md:p-2 md:px-3',
-                  {
-                    'bg-sky-100 text-orange-400': pathname === link.href,
-                  },
-                )}
-              >
-                <LinkIcon className="w-6" />
-                <p className="m-auto">{link.name}</p>
-              </Link>
-            );
-          })}
+          <Link
+            key={'Termine'}
+            href={'/termine'}
+            className={clsx(
+              'flex gap-2 p-3 text-2xl font-medium hover:text-primary-400 md:flex-none md:justify-start md:p-2 md:px-3',
+              {
+                'text-primary-400': pathname === '/termine',
+              },
+            )}
+          >
+            <CalendarIcon className="w-6" />
+            <p className="m-auto">Termine</p>
+          </Link>
         </div>
       </div>
     </div>
