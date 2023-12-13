@@ -1,19 +1,23 @@
 const quotes = [
   {
-    text: '"Friede beginnt damit, daß jeder von uns sich jeden Tag um seinenKörper und seinen Geist kümmert."',
+    id: 1,
+    text: 'Friede beginnt damit, daß jeder von uns sich jeden Tag um seinen Körper und seinen Geist kümmert.',
     author: 'Thich Nhat Hanh',
   },
   {
-    text: '410544b2-4001-4271-9855-fec4b6a6442a',
-    author: 'Autor 2',
+    id: 2,
+    text: 'Lerne zu schweigen und du merkst, dass Du zu viel geredet hast.',
+    author: 'Tschen Tschiju',
   },
   {
-    text: '410544b2-4001-4271-9855-fec4b6a6442a',
-    author: 'Autor 3',
+    id: 3,
+    text: 'Das einzig lebenswerte Abenteuer kann für den modernen Menschen nur noch innen zu finden sein.',
+    author: 'Carl Gustav Jung',
   },
   {
-    text: '410544b2-4001-4271-9855-fec4b6a6442a',
-    author: 'Autor 4',
+    id: 4,
+    text: 'Verbringe jeden Tag einige Zeit mit Dir selbst.',
+    author: 'Dalai Lama',
   },
 ];
 
