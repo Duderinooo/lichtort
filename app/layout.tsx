@@ -4,20 +4,22 @@ import { Navbar } from './components/navbar/navbar';
 import { Footer } from './components/footer/footer';
 import Head from 'next/head';
 import { inter } from './fonts';
+import { PropsWithChildren } from 'react';
 
 export const metadata: Metadata = {
   title: 'Lichtort',
   description: 'Lichtort Meditation Yoga Heilung',
 };
 
-export default function RootLayout({
-  children,
-}: {
+type RootLayoutProps = {
   children: React.ReactNode;
-}) {
+};
+
+export default function RootLayout(props: PropsWithChildren<RootLayoutProps>) {
+  const { children } = props;
   return (
     <html lang="en">
-      <Head children={undefined} />
+      <Head>{children}</Head>
       <body>
         <Navbar />
         <div className={`${inter.className} antialiased`}>{children}</div>
