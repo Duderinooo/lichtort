@@ -8,13 +8,15 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col justify-between px-4 py-10 sm:px-10 sm:py-14 md:py-20 lg:p-24 lg:pl-24 lg:pr-24 xl:pl-56 xl:pr-56">
       <FiftyFiftySection
+        alt="Lichtort entrance room with bright sunny light"
         image="/images/original.webp"
         text={<GreetingText />}
       />
       <LotusLine />
-      <FiftyFiftySection image="/images/red_bg.jpg" text={dummyText} />
+      <FiftyFiftySection alt={''} image="/images/red_bg.jpg" text={dummyText} />
       <LotusLine />
       <FiftyFiftySection
+        alt={'Tina ollmann yoga teacher and healer founder of lichtort'}
         image="/images/placeholder_tina.jpg"
         text={<PresentationText />}
         left
