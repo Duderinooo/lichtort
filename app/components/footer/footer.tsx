@@ -6,9 +6,11 @@ export const Footer = () => {
       <div className="flex flex-col gap-4 md:flex-row md:gap-24">
         <div>
           <p className="mb-2 text-3xl">Kontakt</p>
-          <p>Adresse: Möhrenweg 2</p>
+          <p>Tina Ollmann</p>
+          <p>Möhrenweg 2</p>
+          <p>22334 Möhrenhausen</p>
           <p>Telefon: 0120120120120</p>
-          <p>Email: dsadasas@webebwebw.de</p>
+          <p>Email: lichtOrt@gmail.de</p>
         </div>
         <div>
           <p className="mb-2 text-3xl">Rechtliches</p>

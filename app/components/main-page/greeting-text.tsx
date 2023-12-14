@@ -3,7 +3,7 @@ import Image from 'next/image';
 export const GreetingText = () => {
   return (
     <div className="flex flex-col gap-4" style={{ textWrap: 'balance' }}>
-      <p className="text-4xl text-primary-400">Namaste,</p>
+      <p className="text-2xl text-primary-400 lg:text-4xl">Namaste,</p>
       <p className="lg:text-lg">
         und herzlich willkommen im LichtOrt. Einem Ort für Yoga, Heilung und
         Meditation in wohlwollender und entspannter Atmosphäre. Einem Ort der

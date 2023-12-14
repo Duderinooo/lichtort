@@ -3,7 +3,7 @@ import Image from 'next/image';
 export const PresentationText = () => {
   return (
     <div className="flex flex-col gap-4" style={{ textWrap: 'balance' }}>
-      <p className="text-4xl text-primary-400">Über mich,</p>
+      <p className="text-2xl text-primary-400 lg:text-4xl">Über mich,</p>
       <p className=" flex font-bold lg:text-lg">
         Namaste, ich bin Tina Ollmann, deine Yogalehrerin im LichtOrt.
       </p>
