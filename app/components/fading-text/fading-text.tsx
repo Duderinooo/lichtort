@@ -35,7 +35,7 @@ export const FadingText = () => {
       setTimeout(() => {
         setIndex((prevIndex) => (prevIndex + 1) % data.length);
         setIsFadingOut(false);
-      }, 1000); // Adjust the duration to match your transition duration
+      }, 1000);
     }, 7000);
 
     return () => clearInterval(interval);
@@ -50,7 +50,7 @@ export const FadingText = () => {
       }`}
       style={{ textWrap: 'balance' }}
     >
-      <div className="text-2xl font-bold">{data[index].text}</div>
+      <div className="text-xl font-bold lg:text-2xl">{data[index].text}</div>
       <div className=" mt-4 text-xl">{data[index].author}</div>
     </div>
   );

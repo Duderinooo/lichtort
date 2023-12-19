@@ -30,7 +30,7 @@ export const DownloadSection = () => {
             ) : (
               <button className="group relative transform overflow-hidden rounded bg-gradient-to-l from-tertiary-400 to-primary-400 px-4 py-1 text-white transition-transform">
                 <p className="relative z-10 font-bold lg:text-lg">
-                  Herunterladen
+                  Broschüre herunterladen
                 </p>
                 <p className="absolute right-0 top-0 h-full w-full origin-right bg-gradient-to-r from-tertiary-400 to-primary-400 transition-transform group-hover:scale-x-0" />
               </button>

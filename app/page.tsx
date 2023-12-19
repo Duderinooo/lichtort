@@ -6,7 +6,10 @@ import { PresentationText } from './components/main-page/presentation-text';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col justify-between px-4 py-10 sm:px-10 sm:py-14 md:py-20 lg:p-24 lg:pl-24 lg:pr-24 xl:pl-56 xl:pr-56">
+    <main
+      id="start"
+      className="flex min-h-screen flex-col justify-between px-4 py-20 sm:px-10 sm:py-28 lg:px-24 lg:py-32 xl:px-56 xl:py-36"
+    >
       <FiftyFiftySection
         alt="Lichtort entrance room with bright sunny light"
         image="/images/original.webp"
