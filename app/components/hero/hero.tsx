@@ -4,7 +4,7 @@ import { FadingText } from '../fading-text/fading-text';
 export const Hero = () => {
   return (
     <div>
-      <div className="absolute top-[50vh] z-10 w-screen text-center text-white">
+      <div className="absolute top-[21vh] z-10 hidden w-screen text-center text-white sm:block md:top-[50vh]">
         <FadingText />
       </div>
       <Image
